@@ -11,7 +11,7 @@ var answer= await ti.readYesOrNo();
 ti.clear();
 if(answer == true) {
   counter += 4
-  ti.output("mmm yummy. Are you craving A burger or a chicken sandwich?");
+  ti.output("mmm yummy. Are you craving a burger and/or a chicken sandwich?");
   answer = await ti.readYesOrNo();
   ti.clear();
   if(answer == true){
@@ -22,6 +22,7 @@ if(answer == true) {
     if(answer == true){
       counter += 1
     }
+    answer = true;
   }
   if(answer == false){
     ti.output("Okay okay! Are you looking for breakfast food?")
